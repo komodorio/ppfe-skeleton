@@ -35,31 +35,31 @@ Instructions:
 
 ## #4 Bug fix: Navigation to event view broken.
 
-**Expected behavior:** Clicking on event navigate to the event view with the right event id ‘/events/:id’.  
-**Current behavior:** Clicking on event navigate to ‘/:id’.
+**Expected behavior:** Clicking on event navigate to the event view with the right event id ‘/events/:id’. \
+**Current behavior:** Clicking on event navigate to ‘/:id’.\
 **Impact:** The user cant navigate to the event view page.
 
 ## #5 New Page: Show event details.
 
-**URL:** ‘/events/:id’
+**URL:** ‘/events/:id’\
 **Flow:**
 
 - Request to ‘POST: /jobs/:eventId’
 - Getting the job id
 - Try to pull data from ‘GET: /jobs/:jobId’ every 400 milliseconds.
 - Show loading until there is data.
-- Show the data about the job.
-  **Style:**
+- Show the data about the job.\
+  **Style:**\
   ![#5 Style.](/public/images/5Style.png)
 
 ## #6 Styling: Style event view page.
 
-**Style:**
+**Style:**\
 ![#6 Style.](/public/images/6Style.png)
 
 ## #7 New features: Show the next 6 events.
 
-**Expected behavior:** Show the next 6 events.
-**Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.
-**Style:**
+**Expected behavior:** Show the next 6 events.\
+**Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.\
+**Style:**\
 ![#7 Style.](/public/images/7Style.png)
