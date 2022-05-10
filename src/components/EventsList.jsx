@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import KomodorAxios from "../../utils/KomodorAxios";
+import KomodorAxios from "../utils/KomodorAxios";
 import Loading from "./common/Loading";
 import EventListItem from "./EventListItem";
 
