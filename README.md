@@ -5,22 +5,22 @@
 **Expected behavior:** Show the loading and appropriate text when there are more events and show static square when there are no events.\
 ![#1 expected behavior.](public/images/1Expected.png)
 
-**Current behavior:** Always show a static square.
-![#1 current behavior.](/public/images/1Current.png)
-**Impact:** The user has no indication if there are any more events.
+**Current behavior:** Always show a static square.\
+![#1 current behavior.](/public/images/1Current.png)\
+**Impact:** The user has no indication if there are any more events.\
 **Focus:** The styling and functionality implemented. Only to understand why the switch is not working and fix it.
 
 ## #2 New feature: Add an infinite scroll to the Events page.
 
-**Expected behavior:** Fetch a few events (fill the screen) and fetch more when the scroll bar near the end of the list.
-**Current behavior:** The page fetches the first 20 events.
+**Expected behavior:** Fetch a few events (fill the screen) and fetch more when the scroll bar near the end of the list.\
+**Current behavior:** The page fetches the first 20 events.\
 **Impact:** The user will see all the events, without overloading the browser unnecessarily.
 
 ## #3 New feature: Add style to event by kind.
 
-**Expected behavior:** Event row has style by the kind.
-style:  
-![#3 expected behavior.](/public/images/3Expected.png)
+**Expected behavior:** Event row has style by the kind.\
+style:\
+![#3 expected behavior.](/public/images/3Expected.png)\
 Instructions:
 | | Color | image* |
 | ------------- |:-------------:|:-------------:|
