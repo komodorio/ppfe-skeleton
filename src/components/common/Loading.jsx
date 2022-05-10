@@ -34,3 +34,36 @@ const Loading = () => {
 };
 
 export default Loading;
+
+const SquareAnimation = keyframes`
+0% { 
+  transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+} 50% { 
+  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+} 100% { 
+  transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+}
+`;
+
+const StaticSquare = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+`;
+
+const SpinnerLoading = styled.div`
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  animation-name: ${SquareAnimation};
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+`;
+
+export const SquareLoading = ({ isAnimate }) => {
+  return <>{isAnimate ? <SpinnerLoading /> : <StaticSquare />}</>;
+};
