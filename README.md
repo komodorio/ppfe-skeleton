@@ -3,9 +3,9 @@
 ## #1 Bug fix: has more events indication broken.
 
 **Expected behavior:** Show the loading and appropriate text when there are more events and show static square when there are no events.
-![#1 expected behavior.](public/images/#1Expected.png)
+![#1 expected behavior.](public/images/1Expected.png)
 **Current behavior:** Always show a static square.
-![#1 current behavior.](/public/images/#1Current.png)
+![#1 current behavior.](/public/images/1Current.png)
 **Impact:** The user has no indication if there are any more events.
 **Focus:** The styling and functionality implemented. Only to understand why the switch is not working and fix it.
 
@@ -19,7 +19,7 @@
 
 **Expected behavior:** Event row has style by the kind.
 style:  
-![#3 expected behavior.](/public/images/#3Expected.png)
+![#3 expected behavior.](/public/images/3Expected.png)
 Instructions:
 | | Color | image* |
 | ------------- |:-------------:|:-------------:|
@@ -29,7 +29,7 @@ Instructions:
 *The images are located in ‘/utils/icons’
 
 **Current behavior:** All events look the same.
-![#3 expected behavior.](/public/images/#3Current.png)
+![#3 expected behavior.](/public/images/3Current.png)
 **Impact:** A clear visual difference to the user.
 
 ## #4 Bug fix: Navigation to event view broken.
@@ -49,16 +49,16 @@ Instructions:
 - Show loading until there is data.
 - Show the data about the job.
   **Style:**
-  ![#5 Style.](/public/images/#5Style.png)
+  ![#5 Style.](/public/images/5Style.png)
 
 ## #6 Styling: Style event view page.
 
 **Style:**
-![#6 Style.](/public/images/#6Style.png)
+![#6 Style.](/public/images/6Style.png)
 
 ## #7 New features: Show the next 6 events.
 
 **Expected behavior:** Show the next 6 events.
 **Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.
 **Style:**
-![#7 Style.](/public/images/#7Style.png)
+![#7 Style.](/public/images/7Style.png)
