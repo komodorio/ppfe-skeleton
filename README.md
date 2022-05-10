@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Komodor skeleton
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## #1 Bug fix: has more events indication broken.
 
-## Available Scripts
+**Expected behavior:** Show the loading and appropriate text when there are more events and show static square when there are no events.
+![#1 expected behavior.](/public/image/#1Expected.png)
+**Current behavior:** Always show a static square.
+![#1 current behavior.](/public/image/#1Current.png)
+**Impact:** The user has no indication if there are any more events.
+**Focus:** The styling and functionality implemented. Only to understand why the switch is not working and fix it.
 
-In the project directory, you can run:
+## #2 New feature: Add an infinite scroll to the Events page.
 
-### `npm start`
+**Expected behavior:** Fetch a few events (fill the screen) and fetch more when the scroll bar near the end of the list.
+**Current behavior:** The page fetches the first 20 events.
+**Impact:** The user will see all the events, without overloading the browser unnecessarily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## #3 New feature: Add style to event by kind.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Expected behavior:** Event row has style by the kind.
+style:  
+![#3 expected behavior.](/public/image/#3Expected.png)
+Instructions:
+| | Color | image* |
+| ------------- |:-------------:|:-------------:|
+| Node failure | #ff6464 | error.png |
+| HealthChange | #ffe162 | change.png |
+| PodRestart | #91c483 | restart.png |
+*The images are located in ‘/utils/icons’
 
-### `npm test`
+**Current behavior:** All events look the same.
+![#3 expected behavior.](/public/image/#3Current.png)
+**Impact:** A clear visual difference to the user.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## #4 Bug fix: Navigation to event view broken.
 
-### `npm run build`
+**Expected behavior:** Clicking on event navigate to the event view with the right event id ‘/events/:id’.
+**Current behavior:** Clicking on event navigate to ‘/:id’.
+**Impact:** The user cant navigate to the event view page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## #5 New Page: Show event details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**URL:** ‘/events/:id’
+**Flow:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Request to ‘POST: /jobs/:eventId’
+- Getting the job id
+- Try to pull data from ‘GET: /jobs/:jobId’ every 400 milliseconds.
+- Show loading until there is data.
+- Show the data about the job.
+  **Style:**
+  ![#5 Style.](/public/image/#5Style.png)
 
-### `npm run eject`
+## #6 Styling: Style event view page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Style:**
+![#6 Style.](/public/image/#6Style.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## #7 New features: Show the next 6 events.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Expected behavior:** Show the next 6 events.
+**Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.
+**Style:**
+![#7 Style.](/public/image/#7Style.png)
