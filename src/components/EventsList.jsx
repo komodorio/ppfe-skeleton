@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import KomodorAxios from "../../utils/KomodorAxios";
-import Loading from "../Common/Loading";
-import Event from "./Event/Event";
+import KomodorAxios from "../utils/KomodorAxios";
+import Loading from "./common/Loading";
+import EventListItem from "./EventListItem";
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const LoadingContainer = styled.div`
   justify-content: center;
 `;
 
-const Events = () => {
+const EventsList = () => {
   const [items, setItems] = useState([]);
 
   const get = async () => {
@@ -33,7 +33,7 @@ const Events = () => {
     <Container>
       {items.length > 0 ? (
         items.map((item) => {
-          return <Event event={item} />;
+          return <EventListItem event={item} />;
         })
       ) : (
         <LoadingContainer>
@@ -44,4 +44,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default EventsList;
