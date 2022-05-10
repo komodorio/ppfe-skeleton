@@ -4,6 +4,9 @@
 
 **Expected behavior:** Show the loading and appropriate text when there are more events and show static square when there are no events.
 ![#1 expected behavior.](public/images/1Expected.png)
+
+---
+
 **Current behavior:** Always show a static square.
 ![#1 current behavior.](/public/images/1Current.png)
 **Impact:** The user has no indication if there are any more events.
