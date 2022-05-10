@@ -1,5 +1,7 @@
 # Komodor skeleton
 
+---
+
 ## #1 Bug fix: has more events indication broken.
 
 **Expected behavior:** Show the loading and appropriate text when there are more events and show static square when there are no events.\
