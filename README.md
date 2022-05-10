@@ -34,7 +34,7 @@ Instructions:
 
 ## #4 Bug fix: Navigation to event view broken.
 
-**Expected behavior:** Clicking on event navigate to the event view with the right event id ‘/events/:id’.
+**Expected behavior:** Clicking on event navigate to the event view with the right event id ‘/events/:id’.  
 **Current behavior:** Clicking on event navigate to ‘/:id’.
 **Impact:** The user cant navigate to the event view page.
 
