@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const EventView = () => {
+const EventDetails = () => {
   let { id } = useParams();
 
   return <div>event Id: {id}</div>;
 };
 
-export default EventView;
+export default EventDetails;

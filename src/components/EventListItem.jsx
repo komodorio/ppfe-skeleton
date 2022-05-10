@@ -24,7 +24,7 @@ const VerticalLine = styled.div`
 
 const Kind = styled.div``;
 
-const Event = ({ event }) => {
+const EventListItem = ({ event }) => {
   return (
     <Container
       onClick={() => {
@@ -38,4 +38,4 @@ const Event = ({ event }) => {
   );
 };
 
-export default Event;
+export default EventListItem;
