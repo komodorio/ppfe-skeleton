@@ -24,12 +24,13 @@
 style:\
 ![#3 expected behavior.](/public/images/3Expected.png)\
 Instructions:
-| | Color | image* |
+| | Color | image\* |
 | ------------- |:-------------:|:-------------:|
 | Node failure | #ff6464 | error.png |
 | HealthChange | #ffe162 | change.png |
 | PodRestart | #91c483 | restart.png |
-*The images are located in ‘/utils/icons’
+
+\*The images are located in ‘/utils/icons’
 
 **Current behavior:** All events look the same.
 ![#3 expected behavior.](/public/images/3Current.png)
