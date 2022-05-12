@@ -14,7 +14,7 @@
 
 ## #2 New feature: Add an infinite scroll to the Events page.
 
-**Expected behavior:** Fetch a few events (fill the screen) and fetch more when the scroll bar near the end of the list.\
+**Expected behavior:** Fetch enough events to fill the screen and fetch more when the scroll bar near the end of the list.\
 **Current behavior:** The page fetches the first 20 events.\
 **Impact:** The user will see all the events, without overloading the browser unnecessarily.
 
@@ -26,11 +26,9 @@ style:\
 Instructions:
 | | Color | image\* |
 | ------------- |:-------------:|:-------------:|
-| Node failure | #ff6464 | error.png |
-| HealthChange | #ffe162 | change.png |
-| PodRestart | #91c483 | restart.png |
-
-\*The images are located in ‘/utils/icons’
+| Node failure | #ff6464 | /utils/icons/error.png |
+| HealthChange | #ffe162 | /utils/icons/change.png |
+| PodRestart | #91c483 | /utils/icons/restart.png |
 
 **Current behavior:** All events look the same.
 ![#3 expected behavior.](/public/images/3Current.png)
@@ -62,7 +60,7 @@ Instructions:
 
 ## #7 New features: Show the next 6 events.
 
-**Expected behavior:** Show the next 6 events.\
+**Expected behavior:** Show the next 6 events that clicking on them will show us the details of the clicked event.\
 **Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.\
 **Style:**\
 ![#7 Style.](/public/images/7Style.png)
