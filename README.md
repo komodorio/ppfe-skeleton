@@ -24,7 +24,7 @@
 style:\
 ![#3 expected behavior.](/public/images/3Expected.png)\
 Instructions:
-| | Color | image\* |
+| | Color | image |
 | ------------- |:-------------:|:-------------:|
 | Node failure | #ff6464 | /utils/icons/error.png |
 | HealthChange | #ffe162 | /utils/icons/change.png |
