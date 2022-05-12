@@ -26,9 +26,9 @@ style:\
 Instructions:
 | | Color | image |
 | ------------- |:-------------:|:-------------:|
-| Node failure | #ff6464 | /utils/icons/error.png |
-| HealthChange | #ffe162 | /utils/icons/change.png |
-| PodRestart | #91c483 | /utils/icons/restart.png |
+| Node failure | #ff6464 | /src/utils/icons/error.png |
+| HealthChange | #ffe162 | /src/utils/icons/change.png |
+| PodRestart | #91c483 | /src/utils/icons/restart.png |
 
 **Current behavior:** All events look the same.
 ![#3 expected behavior.](/public/images/3Current.png)
