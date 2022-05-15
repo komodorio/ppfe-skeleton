@@ -5,7 +5,7 @@
 ## #1 Bug fix: "Has more events" indication is broken.
 
 **Current behavior:** The has more events indication always shows no more events with a static square.
-![#1 current behavior.](/public/images/1Current.png)\
+![#1 current behavior.](/public/images/1Current.png)
 
 **Expected behavior:** Show the loading square animation and loading more events text when there are more events.
 ![#1 expected behavior.](public/images/1Expected.png)
