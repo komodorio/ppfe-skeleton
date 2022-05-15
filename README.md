@@ -16,7 +16,7 @@
 
 **Current behavior:** The page fetches only the first 20 events.
 
-**Expected behavior:** When scrolling the page to the bottom more events should be loaded from the API until there are no more events.\
+**Expected behavior:** When scrolling the page to the bottom more events should be loaded from the API until there are no more events.
 
 ## #3 New feature: Add style to event by kind.
 
@@ -24,7 +24,7 @@
 ![#3 expected behavior.](/public/images/3Current.png)
 
 **Expected behavior:** Event row has style by the kind.
-style:\
+style:
 ![#3 expected behavior.](/public/images/3Expected.png)
 Instructions per event kind:
 | | Color | image |
@@ -45,7 +45,7 @@ Instructions per event kind:
 **Flow:**
 
 - jobUID = Request to ‘POST: /jobs/:eventId’
-- Try to pull data from ‘GET: /jobs/:jobId’ every 400 milliseconds.
+- Try to pull data from ‘GET: /jobs/:jobUID’ every 400 milliseconds.
 - Show loading until there is data.
 - When the result field is non-null, show the event data.
   **Style:**
