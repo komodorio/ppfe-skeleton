@@ -44,8 +44,8 @@ Instructions per event kind:
 **URL:** ‘/events/:id’
 **Flow:**
 
-- jobUID = Request to ‘POST: /jobs/:eventId’
-- Try to pull data from ‘GET: /jobs/:jobUID’ every 400 milliseconds.
+- jobUID = Request to `POST: /jobs/:eventId`
+- Try to pull data with `GET: /jobs/:jobUID` every 400 milliseconds.
 - Show loading until there is data.
 - When the result field is non-null, show the event data.
   **Style:**
