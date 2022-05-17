@@ -44,7 +44,7 @@ const EventsList = () => {
     <Container>
       <HasMoreAnimation>
         <SquareLoading isAnimate={hasMoreEvents} />
-        <h5>{hasMoreEvents ? "There is more events" : "No more events"}</h5>
+        <h5>{hasMoreEvents ? "There are more events" : "No more events"}</h5>
       </HasMoreAnimation>
       {items.length > 0 ? (
         items.map((item) => {
