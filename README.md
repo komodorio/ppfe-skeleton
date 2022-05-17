@@ -47,7 +47,7 @@ Instructions per event kind:
 - jobUID = Request to `POST: /jobs/:eventId`
 - Try to pull data with `GET: /jobs/:jobUID` every 400 milliseconds.
 - Show loading until there is data.
-- When the result field is non-null, show the event data, make sure the polling stop.
+- When the result field is non-null, show the event data, make sure the pulling stop.
   **Style:**
   ![#5 Style.](/public/images/5Style.png)
 
