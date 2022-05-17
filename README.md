@@ -23,7 +23,7 @@
 **Current behavior:** All events in the table look the same.
 ![#3 expected behavior.](/public/images/3Current.png)
 
-**Expected behavior:** Event row has style by the kind.
+**Expected behavior:** Event row has style by the kind.\
 style:
 ![#3 expected behavior.](/public/images/3Expected.png)
 Instructions per event kind:
