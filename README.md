@@ -59,6 +59,6 @@ Instructions per event kind:
 ## #7 New features: Show the next 6 events.
 
 **Expected behavior:** Show the next 6 events that clicking on them will show us the details of the clicked event.
-**Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.
+**Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.\
 **Style:**
 ![#7 Style.](/public/images/7Style.png)
