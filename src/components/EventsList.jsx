@@ -22,7 +22,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-position fixed;
+position: fixed;
 right: 0;
 margin-right: 10%; 
 `;
