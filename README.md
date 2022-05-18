@@ -27,11 +27,11 @@
 style:
 ![#3 expected behavior.](/public/images/3Expected.png)
 Instructions per event kind:
-| | Color | image |
-| ------------- |:-------------:|:-------------:|
-| NodeFailure | #ff6464 | /src/utils/icons/error.png |
-| HealthChange | #ffe162 | /src/utils/icons/change.png |
-| PodRestart | #91c483 | /src/utils/icons/restart.png |
+| | Color |
+| ------------- |:-------------:|
+| NodeFailure | #ff6464 |
+| HealthChange | #ffe162 |
+| PodRestart | #91c483 |
 
 ## #4 Bug fix: Navigation to event view broken.
 
@@ -56,9 +56,24 @@ Instructions per event kind:
 **Style:**
 ![#6 Style.](/public/images/6Style.png)
 
-## #7 New features: Show the next 6 events.
+## #7 New feature: Add images to event by kind.
+
+**Current behavior:** Each event is characterized by color according to kind .
+![#7 current behavior.](/public/images/7Current.png)
+
+**Expected behavior:** Event row has style also contain image by kind.\
+style:
+![#7 expected behavior.](/public/images/7Expected.png)
+Instructions per event kind:
+| | image |
+| ------------- |:-------------:|:-------------:|
+| NodeFailure | /src/utils/icons/error.png |
+| HealthChange | /src/utils/icons/change.png |
+| PodRestart | /src/utils/icons/restart.png |
+
+## #8 New features: Show the next 6 events.
 
 **Expected behavior:** Show the next 6 events that clicking on them will show us the details of the clicked event.
 **Impact:** The user will see the next 6 events, this allows for a quick navigation to another event.\
 **Style:**
-![#7 Style.](/public/images/7Style.png)
+![#8 Style.](/public/images/8Style.png)
