@@ -41,7 +41,7 @@ Instructions per event kind:
 
 ## #5 New Page: Show event details.
 
-**URL:** ‘/events/:id’
+**URL:** ‘/events/:id’\
 **Flow:**
 
 - jobUID = Request to `POST: /jobs/:eventId`
