@@ -61,12 +61,12 @@ Instructions per event kind:
 **Current behavior:** Each event is characterized by color according to kind .
 ![#7 current behavior.](/public/images/7Current.png)
 
-**Expected behavior:** Event row has style also contain image by kind.\
+**Expected behavior:** Event row style also contain image by kind.\
 style:
 ![#7 expected behavior.](/public/images/7Expected.png)
 Instructions per event kind:
 | | image |
-| ------------- |:-------------:|:-------------:|
+| ------------- |:-------------:|
 | NodeFailure | /src/utils/icons/error.png |
 | HealthChange | /src/utils/icons/change.png |
 | PodRestart | /src/utils/icons/restart.png |
