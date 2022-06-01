@@ -23,7 +23,7 @@
 **Current behavior:** All events in the table look the same.
 ![#3 expected behavior.](/public/images/3Current.png)
 
-**Expected behavior:** Event row has style by the kind.\
+**Expected behavior:** Event row has style by the kind. The colored background should be of the same width as the ID column is.
 style:
 ![#3 expected behavior.](/public/images/3Expected.png)
 Instructions per event kind:
@@ -37,7 +37,7 @@ Instructions per event kind:
 
 **Current behavior:** Clicking on event navigates to ‘/:id’.
 
-**Expected behavior:** Clicking on event navigates to the event view with the correct event id ‘/events/:id’.
+**Expected behavior:** Clicking on event navigates to the event view with the correct event id ‘/events/:id’. Back button should work properly and lead back to /events page.
 
 ## #5 New Page: Show event details.
 
@@ -46,10 +46,10 @@ Instructions per event kind:
 
 - jobUID = Request to `POST: /jobs/:eventId`
 - Try to pull data with `GET: /jobs/:jobUID` every 400 milliseconds.
-- Show loading until there is data.
-- When the result field is non-null, show the event data, make sure the pulling stop.\
-  **Style:**
-  ![#5 Style.](/public/images/5Style.png)
+- Show loading until a non-null result is received
+- Polling should start as soon as you have a `jobUID` and stop once you have a result.
+- You can use the existing `useInterval` hook under the utils folder.
+- When you have a result, render the JSON as-is to the page
 
 ## #6 Styling: Style event view page.
 
